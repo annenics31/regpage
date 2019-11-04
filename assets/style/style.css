@@ -1,0 +1,65 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'ZCOOL XiaoWei', serif;
+
+}
+#menubar {
+	background-color: #ffad99;
+	height: 150px;
+}
+#jntc {
+	line-height: 200px;
+	font-size: 70px;
+	padding-left: 2%;
+	color: white;
+	text-decoration: none;
+
+}
+#login {
+	font-size: 30px;
+	padding-left: 75%;
+	color: white;
+	text-decoration: none;
+}
+#register {
+	font-size: 30px;
+	padding-left: 1.5%;
+	color: white;
+	text-decoration: none;
+}
+#mainbody {
+	padding-bottom: 50px;
+}
+#form {
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+}
+#box {
+	background-color: #1a1a1a;
+	width: 700px;
+	height: 1500px;
+	margin: 0px auto;
+	border-radius: 20px;
+}
+#logininfo {
+	font-size: 25px;
+	color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.label {
+	color: white;
+	padding-left: 50px;
+	font-size: 20px;
+	line-height: 50px;
+}
+.input {
+	width: 250px;
+}
+#footer {
+	background-color: #ffad99;
+	height: 100px;
+}
