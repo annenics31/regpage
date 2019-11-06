@@ -7,13 +7,15 @@
 </head>
 <body>
 	<div id="menubar">
-		<a href="" id="jntc">JNTC</a>
-		<a href="" id="login">Login</a>
-		<a href="" id="register">Register</a>
+		<a href="homepage.html" id="jntc">JNTC</a>
+		<a href="login.html" id="login">Login</a>
+		<a href="regpage.html" id="register">Register</a>
 	</div>
 	<div id="mainbody">
 		<div id="form">Register</div>
 		<div id="box">
+
+		<form>
 			<div class="header">
 				Login Info
 			</div>
@@ -40,17 +42,21 @@
 					<input type="text" name="lastname" class="input" placeholder="enter last name">
 				</div>
 				<div>
+					<label class="label" id="age">Age</label>
+					<input type="number" name="Age" class="input">
+				</div>
+				<div>
 					<div>
 						<label class="label" id="genderlabel">Gender:</label>
 					</div>
 						<div class="mfu">
-							<input type="radio" name="male">Male
+							<input type="radio" name="x" value="male" checked>Male
 						</div>
 						<div class="mfu">
-							<input type="radio" name="female">Female
+							<input type="radio" name="x" value="female">Female
 						</div>
 						<div class="mfu">
-							<input type="radio" name="unknown">unknown
+							<input type="radio" name="x" value="unknown">unknown
 						</div>
 				</div>
 				<div>
@@ -70,16 +76,20 @@
 						<option>Africa</option>
 					</select>
 				</div>
+			<!-- 	<div>
+					<label class="label">Upload Profile Picture</label>
+					<input type="file" name="profilepic" class="input">
+				</div> -->
 				<hr class="division">
 			<div class="header">Programming Skills</div>
 			<div class="pstable">
 			<table>
 				<tr>
 					<td>
-						<input type="checkbox" name="checkbox"> HTML
+						<input type="checkbox" name="checkbox" checked> HTML
 					</td>
 					<td>
-						<input type="checkbox" name="checkbox"> CSS
+						<input type="checkbox" name="checkbox" checked> CSS
 					</td>
 				</tr>
 				<tr>
@@ -103,12 +113,29 @@
 			<hr class="division">
 			<div>
 				<div class="header">About You</div>
-					<textarea id="aytext" placeholder="enter text here..."></textarea>
+					<textarea id="aytext" placeholder="enter text here..." maxlength="100"></textarea>
 			</div>
 			<hr class="division">
 			<div id="submit">
 				<input type="submit" name="submit" id="sub">
 			</div>
+			</form>
+
+			<form>
+				<div>
+					<fieldset id="field">
+						<legend class="label">Already a member?  Login instead</legend>
+						<label class="label">Email</label>
+						<input type="email" name="email" placeholder="enter email adress">
+						<label class="label">Password</label>
+						<input type="password" name="pass" placeholder="enter password">
+						<div id="libmother">
+							<button id="libutton">Login</button>
+						</div>
+					</fieldset>
+				</div>
+			</form>
+
 		</div>
 	</div>
 	<div id="footer"></div>
