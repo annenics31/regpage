@@ -14,16 +14,100 @@
 	<div id="mainbody">
 		<div id="form">Register</div>
 		<div id="box">
-			<div id="logininfo">
+			<div class="header">
 				Login Info
 			</div>
-			<div>
-				<label class="label">Email</label>
-				<input type="text" name="email" class="input">
+				<div>
+					<label class="label" id="emaillabel">Email</label>
+					<input type="text" name="email" class="input" placeholder="enter email address">
+				</div>
+				<div>
+					<label class="label" id="passwordlabel">Password</label>
+					<input type="Password" name="Password" class="input" placeholder="enter password">
+				</div>
+				<div>
+					<label class="label" id="confirmpasslabel">Confirm Password</label>
+					<input type="password" name="password" placeholder="confirm password" class="input">
+				</div>
+				<hr class="division">
+			<div class="header">Personal Info</div>
+				<div>
+					<label id="fnlabel" class="label">First Name</label>
+					<input type="text" name="firstname" class="input" placeholder="enter first name">
+				</div>
+				<div>
+					<label class="label" id="lnlabel">Last Name</label>
+					<input type="text" name="lastname" class="input" placeholder="enter last name">
+				</div>
+				<div>
+					<div>
+						<label class="label" id="genderlabel">Gender:</label>
+					</div>
+						<div class="mfu">
+							<input type="radio" name="male">Male
+						</div>
+						<div class="mfu">
+							<input type="radio" name="female">Female
+						</div>
+						<div class="mfu">
+							<input type="radio" name="unknown">unknown
+						</div>
+				</div>
+				<div>
+					<label class="label" id="birthdate">Birthdate</label>
+					<input type="date" name="date">
+				</div>
+				<div>
+					<label class="label" id="continent">Continent</label>
+					<select>
+						<option>Select</option>
+						<option>Asia</option>
+						<option>North America</option>
+						<option>South America</option>
+						<option>Antartica</option>
+						<option>Europe</option>
+						<option>Australia</option>
+						<option>Africa</option>
+					</select>
+				</div>
+				<hr class="division">
+			<div class="header">Programming Skills</div>
+			<div class="pstable">
+			<table>
+				<tr>
+					<td>
+						<input type="checkbox" name="checkbox"> HTML
+					</td>
+					<td>
+						<input type="checkbox" name="checkbox"> CSS
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="checkbox">Javascript
+					</td>
+					<td>
+						<input type="checkbox" name="checkbox">PHP
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" name="checkbox">NODEJS
+					</td>
+					<td>
+						<input type="checkbox" name="checkbox">MYSQL
+					</td>
+				</tr>
+			</table>
 			</div>
+			<hr class="division">
 			<div>
-				<label class="label">Password</label>
-				<input type="Password" name="Password" class="input">
+				<div class="header">About You</div>
+					<textarea id="aytext" placeholder="enter text here..."></textarea>
+			</div>
+			<hr class="division">
+			<div id="submit">
+				<input type="submit" name="submit" id="sub">
 			</div>
 		</div>
 	</div>
